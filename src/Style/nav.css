@@ -1,0 +1,104 @@
+/* styles.css */
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+  /* Elimina el margen derecho del último elemento */
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  line-height: 50px;
+  /* Color del texto del enlace */
+}
+
+.nav li a:hover {
+  /* color: #9eca23; */
+  border-radius: 10px;
+  background-color:#EDA836;
+  width: 128px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.left {
+  float: left;
+  margin-left: 20px;
+}
+.right1 {
+    float: right;
+    margin-left: 30px; /* Ajusta el margen si es necesario */
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.right2 {
+    float: right;
+    margin-left: 30px; /* Ajusta el margen si es necesario */
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.right3 {
+    float: right;
+    margin-left: 10px; /* Ajusta el margen si es necesario */
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+  .nav li {
+    display: block; /* Cambia a presentación de bloque */
+    margin-right: 0;
+    /* margin-bottom: 10px; Añade espacio entre elementos */
+  }
+}
+
+.notification-badge {
+  position: relative;
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.count-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%); /* Centra el círculo */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 16px; /* Mismo ancho que el alto */
+  height: 16px; /* Mismo alto que el ancho */
+  padding: 2px; /* Ajuste del padding */
+  font-size: 10px; /* Reducción del tamaño del texto */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}

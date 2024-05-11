@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap');
+
+.card-container {
+    display:flex; 
+  justify-content:space-around; 
+  border-left:10px solid black;
+}
+
+.card {
+    height: 514px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 340px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 24px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+.letter {
+    width: 340px;
+    height: auto;
+    border-radius: 14px;
+}
+
+.add {
+    width: 340px;
+    height: auto;
+    border-radius: 14px;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(216, 207, 207);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.circle.active {
+    background-color: #272626;
+}
