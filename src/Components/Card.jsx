@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import '../Style/card.css';
 
+//import
+
 const StarRating = ({ rating, onMouseOver }) => {
     return (
         <div style={{ fontSize: '20px' }}>
@@ -57,7 +59,6 @@ const Card = ({ data, onAddNotification }) => {
     };
 
     return (
-
         <div className="card" style={{ position: 'relative' }}>
             <div className="cards" style={{ margin: '0 auto', position: 'relative', zIndex: '1', display: 'flex', alignItems: 'flex-start' }}>
                 <img src={imagen[currentImageIndex]} alt="" style={{ width: '100%', height: 'auto' }} />
